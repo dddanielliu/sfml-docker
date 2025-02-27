@@ -63,6 +63,7 @@ RUN g++ main.o -o sfml-app -lsfml-graphics -lsfml-window -lsfml-system
 #CMD ["/bin/bash"]
 
 FROM ghcr.io/linuxserver/baseimage-kasmvnc:ubuntunoble
+EXPOSE 3000
 
 RUN apt-get update
 RUN apt-get install -y --no-install-recommends libsfml-dev
